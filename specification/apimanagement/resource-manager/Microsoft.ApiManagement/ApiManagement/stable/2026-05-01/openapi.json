@@ -64137,6 +64137,30 @@
         }
       }
     },
+    "SubscriptionKeyBearerState": {
+      "type": "string",
+      "description": "Whether to accept API Management subscription keys using the Bearer authorization scheme.",
+      "enum": [
+        "disabled",
+        "enabled"
+      ],
+      "x-ms-enum": {
+        "name": "SubscriptionKeyBearerState",
+        "modelAsString": true,
+        "values": [
+          {
+            "name": "Disabled",
+            "value": "disabled",
+            "description": "Subscription keys in the Authorization header using the Bearer scheme are not accepted."
+          },
+          {
+            "name": "Enabled",
+            "value": "enabled",
+            "description": "Subscription keys in the Authorization header using the Bearer scheme are accepted."
+          }
+        ]
+      }
+    },
     "SubscriptionKeyParameterNamesContract": {
       "type": "object",
       "description": "Subscription key parameter names details.",
@@ -64148,6 +64172,10 @@
         "query": {
           "type": "string",
           "description": "Subscription key query string parameter name."
+        },
+        "bearer": {
+          "$ref": "#/definitions/SubscriptionKeyBearerState",
+          "description": "Whether to accept an API Management subscription key in the Authorization header using the Bearer scheme. Set to 'enabled' to opt in. If omitted, empty, or 'disabled', this behavior is disabled. This setting does not configure OAuth or JWT validation."
         }
       }
     },
