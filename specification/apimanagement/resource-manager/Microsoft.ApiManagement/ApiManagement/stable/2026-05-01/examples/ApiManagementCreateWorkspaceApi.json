@@ -20,8 +20,7 @@
         "serviceUrl": "http://newechoapi.cloudapp.net/api",
         "subscriptionKeyParameterNames": {
           "header": "header4520",
-          "query": "query3037",
-          "bearer": "enabled"
+          "query": "query3037"
         }
       }
     },
@@ -63,8 +62,7 @@
           "serviceUrl": "http://newechoapi.cloudapp.net/api",
           "subscriptionKeyParameterNames": {
             "header": "header4520",
-            "query": "query3037",
-            "bearer": "enabled"
+            "query": "query3037"
           }
         }
       },
@@ -105,8 +103,7 @@
           "serviceUrl": "http://newechoapi.cloudapp.net/api",
           "subscriptionKeyParameterNames": {
             "header": "header4520",
-            "query": "query3037",
-            "bearer": "enabled"
+            "query": "query3037"
           }
         }
       },
